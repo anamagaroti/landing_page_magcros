@@ -1,0 +1,21 @@
+.sessao-garantia{
+    height: 30em;
+    background-color: black;
+    color: #fff;
+}
+
+.garantia img{
+    width: 10em;
+    padding-top: 4em;
+}
+
+.garantia p{
+    padding-bottom: 1em;
+    color: rgb(133, 132, 132);
+    letter-spacing: 1em;
+}
+
+.info p{
+    padding-top: 1em;
+    color: rgb(133, 132, 132);
+}

@@ -1,0 +1,122 @@
+.produto{
+    background-image: url('../../images/fundo_preto.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding-top: 5em;
+}
+
+.produto h1{
+    padding-bottom: 1em;
+    letter-spacing: 1em;
+    font-size: 2em;
+}
+
+.produto h3{
+    padding-bottom: 2em;
+}
+
+.produto-quadro-one, .produto-quadro{
+    padding: 8em;
+
+    height: 20em;
+}
+
+.produto-quadro-one h1, .produto-quadro h1{
+    color: #fff;
+    font-size: 2em;
+    padding-bottom: 0.5em;
+}
+
+.produto-quadro-one img, .produto-quadro img{
+    width: 50em;
+    height: 20em;
+    border-radius: 2em;
+}
+
+.produto-conteudo-one a, .produto-conteudo a{
+    color: #000;
+    background-color: aqua;
+    padding: 0.8em;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    text-decoration: none;
+}
+
+.produto-conteudo-one p, .produto-conteudo p{
+    color: #ffffff;
+    font-size: 0.9em;
+    text-align: justify;
+    padding-right: 1.5em;
+}
+
+.produto-quadro-one{
+    background-image: url('../../images/fundo_grad_top.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+}
+
+.produto-quadro{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    background-image: url('../../images/fundo_preto.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.produto-conteudo{
+    width: 35em;
+    padding-left: 2em;
+}
+
+.produto-conteudo-one{
+    width: 35em;
+    text-align: start;
+
+}
+
+.produto-quadro-passo-a-passo{
+    background-image: url('../../images/fundo_grad_top.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 2em;
+}
+
+.produto-conteudo-passo-a-passo h1{
+    color: #fff;
+    padding: 2em;
+}
+
+.produto-img{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.produto-img-passo-a-passo img{
+    width: 80%;
+    border-radius: 10px;
+    
+}
+
+.produto-texto-passo-a-passo{
+    padding: 1em 5em 1em 5em;
+}
+
+.produto-texto-passo-a-passo p, h4{
+    color: #fff;
+    padding: 0.2em;
+}
+
+.produto-texto-passo-a-passo p{
+    font-size: 0.9em;
+}
+

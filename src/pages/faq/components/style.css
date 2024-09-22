@@ -1,0 +1,26 @@
+.body-components-pergunta{
+    background-color: #151515;
+    color: #fff;
+    width: 38em;
+    border-radius: 0.5em;
+    margin: 1em;
+    padding: 1.2em;
+}
+.pergunta{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pergunta p{
+    font-size: 0.9em;
+}
+
+.resposta{
+    margin-top: 1em;
+    text-align: justify;
+}
+
+.resposta p{
+    color: #c7c5c5;
+    font-size: 0.8em;
+}

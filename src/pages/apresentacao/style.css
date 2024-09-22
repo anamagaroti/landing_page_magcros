@@ -1,0 +1,28 @@
+
+
+.Features {
+  padding-top: 6em;  
+  margin: 0;
+  background-image: url('../../images/fundo_grad_direito_superior.png'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  .frase{
+    padding: 2em;
+    margin-left: 15em;
+    margin-right: 15em;
+  }
+  .frase h1{
+    color: #fff;
+    font-size: 2em;
+    padding-bottom: 1em;
+  }
+  .frase h3{
+    color: #fff;
+  }
+
+  .Features img{
+    width: 80em;
+  }
