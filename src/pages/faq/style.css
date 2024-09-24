@@ -1,20 +1,45 @@
-.body-faq{
+.body-faq {
     background-color: black;
     color: #fff;
     padding: 2em;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna */
+    align-items: center; /* Centraliza os elementos horizontalmente */
 }
 
-.faq p{
+.faq p {
     color: rgb(133, 132, 132);
     letter-spacing: 1em;
 }
 
-.faq h1{
+.faq h1 {
     font-size: 2.5em;
     padding: 0.5em;
+    text-align: center; /* Centraliza o título */
 }
 
-.body-perguntas{
+.body-perguntas {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column; /* Muda para coluna em telas menores */
+    justify-content: center; /* Centraliza o conteúdo */
+    align-items: center; /* Centraliza o conteúdo */
+    width: 100%; /* Ocupa 100% da largura disponível */
+}
+
+.perguntas {
+    width: 100%; /* Garante que as perguntas ocupem toda a largura */
+    max-width: 600px; /* Define uma largura máxima */
+    margin: 1em 0; /* Adiciona margens verticais */
+}
+
+/* Media Queries para Responsividade */
+@media (min-width: 768px) {
+    .body-perguntas {
+        flex-direction: row; /* Mantém a linha em telas maiores */
+        justify-content: space-evenly; /* Distribui espaço igualmente */
+    }
+
+    .perguntas {
+        width: auto; /* Permite que os containers de perguntas ajustem sua largura */
+    }
 }

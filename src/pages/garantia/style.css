@@ -1,21 +1,68 @@
-.sessao-garantia{
-    height: 30em;
+.sessao-garantia {
+    height: auto; /* Ajuste automático para o conteúdo */
     background-color: black;
     color: #fff;
+    padding: 4em 1em; /* Padding para criar espaçamento */
+    text-align: center; /* Centralizar texto */
 }
 
-.garantia img{
+.garantia img {
     width: 10em;
-    padding-top: 4em;
+    padding-top: 2em; /* Menos padding para telas menores */
+    max-width: 100%; /* Para garantir que a imagem não exceda o tamanho da tela */
+    height: auto; /* Manter a proporção da imagem */
 }
 
-.garantia p{
+.garantia p {
     padding-bottom: 1em;
     color: rgb(133, 132, 132);
-    letter-spacing: 1em;
+    letter-spacing: 0.1em; /* Reduzir o espaçamento em telas menores */
 }
 
-.info p{
+.info {
+    margin-top: 2em; /* Espaço acima do texto */
+}
+
+.info h1 {
+    font-size: 2em; /* Tamanho de fonte para h1 */
+    margin: 0.5em 0; /* Margem para espaçamento */
+}
+
+.info p {
     padding-top: 1em;
     color: rgb(133, 132, 132);
+    font-size: 1em; /* Tamanho de fonte padrão */
+}
+
+/* Estilos responsivos para telas menores */
+@media (max-width: 768px) {
+    .garantia img {
+        width: 8em; /* Tamanho da imagem menor em tablets */
+    }
+
+    .info h1 {
+        font-size: 1.5em; /* Reduzir o tamanho da fonte em telas menores */
+    }
+
+    .info p {
+        font-size: 0.9em; /* Reduzir o tamanho do texto */
+    }
+}
+
+@media (max-width: 480px) {
+    .sessao-garantia {
+        padding: 2em 1em; /* Ajustar padding em telas muito pequenas */
+    }
+
+    .garantia img {
+        width: 7em; /* Tamanho da imagem ainda menor em celulares */
+    }
+
+    .info h1 {
+        font-size: 1.2em; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    .info p {
+        font-size: 0.8em; /* Tamanho do texto menor */
+    }
 }

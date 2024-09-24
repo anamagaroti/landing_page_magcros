@@ -1,3 +1,4 @@
+/* Estilos gerais */
 .App-header {
   background-color: #151516f8;
   padding: 22px;
@@ -8,6 +9,7 @@
   position: fixed;
   width: 100%;
   z-index: 1000;
+  top: 0;
 }
 
 .App-header div {
@@ -45,17 +47,16 @@
 }
 
 .App-header img {
-  
   width: 12em;
 }
 
-/* Adicionado estilo para o botão de menu */
+/* Botão de menu (hamburger) */
 .menu-button {
   display: none;
   background: none;
   border: none;
   font-size: 24px;
-  color: white; /* Botão ficará visível */
+  color: white;
   cursor: pointer;
   padding: 0 10px;
 }
@@ -65,39 +66,40 @@
   .links-menu-div {
     display: none;
     flex-direction: column;
-    gap: 0;
     position: absolute;
     top: 60px;
     right: 10px;
-    background-color: white;
-    border: 1px solid #ccc;
+    background-color: #151516f8;
     padding: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  /* Exibir o menu quando aberto */
-  .links-menu-div.open {
-    display: flex;
-  }
-
-  /* Estilos para o botão "hamburger" */
+  /* Mostrar botão de menu (hamburger) */
   .menu-button {
-    display: block; /* Faz o botão aparecer em telas menores */
+    display: block;
     position: absolute;
     top: 22px;
     right: 20px;
   }
 
-  /* Esconder o logo um pouco para ter mais espaço */
+  /* Ajustar o tamanho do logo em telas menores */
   .App-header img {
     margin-left: 1em;
     width: 8em;
   }
 }
 
-/* Exibir links em telas grandes */
+/* Estilos para telas maiores */
 @media (min-width: 769px) {
   .menu-button {
     display: none;
+  }
+
+  .links-menu-div {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
   }
 }

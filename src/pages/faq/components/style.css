@@ -1,26 +1,61 @@
-.body-components-pergunta{
+.body-components-pergunta {
     background-color: #151515;
     color: #fff;
-    width: 38em;
+    width: 100%; /* Alterado para 100% para ocupar o espaço disponível */
+    max-width: 38em; /* Mantém o limite máximo */
     border-radius: 0.5em;
-    margin: 1em;
+    margin: 1em auto; /* Centraliza o componente */
     padding: 1.2em;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra sutil */
 }
-.pergunta{
+
+.pergunta {
     display: flex;
     justify-content: space-between;
+    cursor: pointer; /* Adiciona um cursor de ponteiro para indicar que é clicável */
 }
 
-.pergunta p{
+.pergunta p {
     font-size: 0.9em;
+    margin: 0; /* Remove margem padrão */
 }
 
-.resposta{
+.resposta {
     margin-top: 1em;
     text-align: justify;
 }
 
-.resposta p{
+.resposta p {
     color: #c7c5c5;
     font-size: 0.8em;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    .body-components-pergunta {
+        padding: 1em; /* Reduz o padding em telas menores */
+        width: 90%; /* Aumenta a largura em telas menores */
+    }
+
+    .pergunta p {
+        font-size: 1em; /* Aumenta o tamanho da fonte em telas menores */
+    }
+
+    .resposta p {
+        font-size: 0.9em; /* Aumenta o tamanho da fonte em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .body-components-pergunta {
+        padding: 0.8em; /* Reduz ainda mais o padding */
+    }
+
+    .pergunta p {
+        font-size: 0.9em; /* Ajusta a fonte em telas muito pequenas */
+    }
+
+    .resposta p {
+        font-size: 0.8em; /* Mantém o tamanho da fonte */
+    }
 }
