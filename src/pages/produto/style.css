@@ -15,6 +15,10 @@
     font-weight: 500;
 }
 
+.produto img{
+    width: 80%;
+}
+
 .produto h3 {
     padding-bottom: 2em;
 }
@@ -23,23 +27,21 @@
     padding: 4em;
     height: auto;
     display: flex;
-    flex-direction: column;
     align-items: center;
 }
 
 .produto-quadro-one h1, .produto-quadro h1 {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.8em;
     padding-bottom: 0.5em;
-    text-align: center;
+    text-align: start;
 }
 
 .produto-quadro-one img, .produto-quadro img {
-    width: 100%;
-    max-width: 800px;
+    width: 80%;
+    max-width: 700px;
     height: auto;
     border-radius: 1em;
-    margin-top: 1em;
 }
 
 .produto-conteudo-one, .produto-conteudo {
@@ -47,6 +49,7 @@
     font-size: 1em;
     text-align: justify;
     padding-right: 1.5em;
+    padding-left: 1.5em;
     max-width: 800px;
 }
 
@@ -63,12 +66,16 @@
     background-repeat: no-repeat;
 }
 
+
+
 .produto-quadro {
     background-image: url('../../images/fundo_preto.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*parte 2 produto*/
 
 .produto-quadro-passo-a-passo {
     background-image: url('../../images/fundo_grad_top.png'); 
@@ -80,20 +87,17 @@
 
 .produto-conteudo-passo-a-passo h1 {
     color: #fff;
-    padding: 2em;
+    padding: 1em 3em 2em 3em;
     text-align: center;
 }
 
 .produto-img {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2em;
+    justify-content: space-around;
 }
 
 .produto-img-passo-a-passo img {
-    width: 100%;
-    max-width: 600px;
+    width: 95%;
     border-radius: 10px;
 }
 
@@ -104,17 +108,20 @@
 
 .produto-texto-passo-a-passo p, h4 {
     color: #fff;
-    padding: 0.5em;
 }
 
 .produto-texto-passo-a-passo p {
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
-/* Estilos responsivos para telas menores */
-@media (max-width: 1024px) {
+@media (max-width: 1245px) {
+    .produto h3 {
+        padding: 0em 2em 2em 2em;
+        font-weight: 500;
+    }
+
     .produto-quadro-one, .produto-quadro {
-        padding: 2em;
+        padding: 2.5em;
     }
 
     .produto-conteudo-one, .produto-conteudo {
@@ -122,15 +129,57 @@
     }
 
     .produto-quadro-one img, .produto-quadro img {
-        width: 90%;
+        width: 50%;
     }
 
     .produto-conteudo-passo-a-passo h1 {
+        font-size: 2em;
+    }
+
+    .produto-conteudo-one p, .produto-conteudo p {
+        font-size: 1em;
+    }
+
+    .produto-conteudo-one h1, .produto-conteudo h1 {
         font-size: 1.5em;
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1024px) {
+    
+    .produto h3 {
+        padding: 0em 2em 2em 2em;
+        font-weight: 500;
+    }
+
+    .produto-quadro-one, .produto-quadro {
+        padding: 2.5em;
+    }
+
+    .produto-conteudo-one, .produto-conteudo {
+        width: 100%;
+    }
+
+    .produto-quadro-one img, .produto-quadro img {
+        width: 50%;
+    }
+
+    .produto-conteudo-passo-a-passo h1 {
+        font-size: 1.2em;
+    }
+
+    .produto-conteudo-one p, .produto-conteudo p {
+        font-size: 0.8em;
+    }
+
+    .produto-conteudo-one h1, .produto-conteudo h1 {
+        font-size: 1.5em;
+    }
+}
+
+
+@media (max-width: 840px) {
     .produto {
         padding-top: 3em;
     }
@@ -148,8 +197,10 @@
     }
 
     .produto-quadro-one, .produto-quadro {
-        flex-direction: column;
+        display: grid;
         padding: 2em;
+        flex-direction: column;
+        justify-items: center;
     }
 
     .produto-conteudo-one, .produto-conteudo {
@@ -157,15 +208,46 @@
         padding: 0 1em;
     }
 
+    .produto-conteudo-one h1, .produto-conteudo h1{
+        text-align: center;
+        font-size: 2em;
+    }
+    .produto-conteudo-one h1{
+        padding: 0em 0em 1em 0em;
+
+    }
+    .produto-conteudo h1{
+        padding: 0.5em 0em 0.2em 0em;
+
+    }
+
+    .produto-conteudo-one p{
+        padding: 0em 4em 1.5em 4em;
+    }
+
+    .produto-conteudo p{
+        padding: 1em 4em 0em 4em;
+    }
+
     .produto-quadro-one img, .produto-quadro img {
-        width: 100%;
-        max-width: 400px;
+        width: 95%;
     }
     .produto img{
-        width: 100%;
-        max-width: 400px;
+        width: 80%;
+
     }
 }
+
+@media (max-width: 769px) {
+    .produto-img{
+        display: grid;
+    }
+    .produto-img-passo-a-passo{
+        padding-bottom: 2em;
+    }
+    
+}
+
 
 @media (max-width: 480px) {
     .produto h1 {

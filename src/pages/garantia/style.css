@@ -1,68 +1,68 @@
 .sessao-garantia {
-    height: auto; /* Ajuste automático para o conteúdo */
+    height: auto; 
     background-color: black;
     color: #fff;
-    padding: 4em 1em; /* Padding para criar espaçamento */
-    text-align: center; /* Centralizar texto */
+    padding: 4em 1em;
+    text-align: center;
 }
 
 .garantia img {
     width: 10em;
-    padding-top: 2em; /* Menos padding para telas menores */
-    max-width: 100%; /* Para garantir que a imagem não exceda o tamanho da tela */
-    height: auto; /* Manter a proporção da imagem */
+    padding-top: 2em;
+    max-width: 100%; 
+    height: auto; 
 }
 
 .garantia p {
     padding-bottom: 1em;
     color: rgb(133, 132, 132);
-    letter-spacing: 0.1em; /* Reduzir o espaçamento em telas menores */
+    letter-spacing: 0.5em; 
 }
 
 .info {
-    margin-top: 2em; /* Espaço acima do texto */
+    margin-top: 2em; 
 }
 
 .info h1 {
-    font-size: 2em; /* Tamanho de fonte para h1 */
-    margin: 0.5em 0; /* Margem para espaçamento */
+    font-size: 2em;
+    margin: 0.5em 0;
 }
 
 .info p {
     padding-top: 1em;
     color: rgb(133, 132, 132);
-    font-size: 1em; /* Tamanho de fonte padrão */
+    font-size: 1em;
 }
 
-/* Estilos responsivos para telas menores */
+
 @media (max-width: 768px) {
     .garantia img {
-        width: 8em; /* Tamanho da imagem menor em tablets */
+        width: 8em;
     }
 
     .info h1 {
-        font-size: 1.5em; /* Reduzir o tamanho da fonte em telas menores */
+        font-size: 1.5em;
     }
 
     .info p {
-        font-size: 0.9em; /* Reduzir o tamanho do texto */
+        font-size: 0.9em;
     }
 }
 
 @media (max-width: 480px) {
     .sessao-garantia {
-        padding: 2em 1em; /* Ajustar padding em telas muito pequenas */
+        padding: 2em 1em;
     }
 
     .garantia img {
-        width: 7em; /* Tamanho da imagem ainda menor em celulares */
+        width: 7em;
     }
 
     .info h1 {
-        font-size: 1.2em; /* Reduzir ainda mais o tamanho da fonte */
+        font-size: 1.2em;
     }
 
     .info p {
-        font-size: 0.8em; /* Tamanho do texto menor */
+        font-size: 0.8em;
     }
 }
